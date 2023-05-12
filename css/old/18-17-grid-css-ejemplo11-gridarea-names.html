@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedad Grid Area</title>
+    <style>
+        body {  
+            background-color: antiquewhite;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        .grid-layout {
+            height: 650px;
+            display: grid;
+            grid-template-areas: 'cabecera cabecera' 'menu menu' 'contenido lateral' 'footer footer';
+
+            /* Acomodar el ancho del menu y del aside */
+            grid-template-rows: 20% 10% auto 10%;
+            /* Acomodar el ancho del main */
+            grid-template-columns: 80% auto; 
+
+            background-color: lightgreen;
+            border: 1px solid black;
+        }
+
+        [class*="caja"] {
+            border: 1px solid black;
+            background-color: lightgray;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .caja1 {
+            grid-area: cabecera;
+            background-color: lightskyblue;
+        }
+
+        .caja2 {
+            grid-area: menu;
+            background-color: lightyellow;
+        }
+
+        .caja3 {
+            grid-area: contenido;
+            background-color: lightsalmon;
+        }
+
+        .caja4 {
+            grid-area: lateral;
+            background-color: rgb(100, 77, 66);
+        }
+
+        .caja4 {
+            grid-area: footer;
+            background-color: lightpink;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="grid-layout">
+
+        <div class="caja1">Header</div>
+        <div class="caja2">Menu</div>
+        <div class="caja3">Main</div>
+        <div class="caja4">Aside</div>
+        <div class="caja5">Footer</div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+h2{
+    color:darksalmon;
+    font-family: cursive;
+    border: 10px double red;
+}
+p{
+    color:blue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:1.5em;
+}
+.snail{
+    color:tomato;
+    opacity:20%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+#text{
+    color: darkorchid;
+    opacity: 20%;
+    border: 20;
+}
+td,tr,table{
+    border: 1px sold lightcoral;
+    border-collapse:collapse;
+    padding: 20px;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        html,
+        body {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            text-align: center;
+            padding: 8px;
+            border: 1px solid black;
+        }
+        th {
+            background-color: #b2eec7;
+        }
+    </style>
+    </head>
+
+    <body>
+
+        <h1 style="text-align: center";>Tabla de amortización</h1><br>
+        <form>
+          <label for="monto">Monto del crédito: </label>
+          <input type="number" id="monto" name="monto" required>
+    
+          <label for="interes">Tasa de interés (anual): </label>
+          <input type="number" id="interes" name="interes" required>
+    
+          <label for="meses">Número de pagos (mensuales): </label>
+          <input type="number" id="meses" name="meses" required>
+    
+          <button type="button" onclick="calcular()" style="background-color: #b2eec7;">Calcular</button>
+        </form>
+    <br><br>
+        <table id="tabla">
+          <tr>
+            <th>Mes</th>
+            <th>Valor</th>
+            <th>Valor total</th>
+            <th>Capital</th>
+            <th>Interés</th>
+            <th>Total</th>
+          </tr>
+        </table>
+
+        <script>
+            function calcular() {
+                
+  const monto = Number(document.getElementById("monto").value);
+  const interes = Number(document.getElementById("interes").value);
+  const meses = Number(document.getElementById("meses").value);
+
+
+  const interesMensual = interes / 12 / 100;
+  const pagoMensual = monto * interesMensual / (1 - ((1 + interesMensual) ** -meses));
+
+
+
+  let saldo = monto;
+  let totalInteres = 0;
+
+  
+  const tabla = document.getElementById("tabla");
+  tabla.innerHTML = "";
+  tabla.innerHTML += "<tr><th>Mes</th><th>Valor</th><th>Valor total</th><th>Capital</th><th>Interés</th><th>Total</th></tr>";
+  for (let mes = 1; mes <= meses; mes++) {
+    const interesMes = saldo * interesMensual;
+    const capitalMes = pagoMensual - interesMes;
+    saldo -= capitalMes;
+    totalInteres += interesMes;
+
+    tabla.innerHTML += `<tr><td>${mes}</td><td>$${pagoMensual.toFixed(2)}</td><td>$${(pagoMensual * mes).toFixed(2)}</td><td>$${capitalMes.toFixed(2)}</td><td>$${interesMes.toFixed(2)}</td><td>$${pagoMensual.toFixed(2)}</td></tr>`;
+  }
+
+
+
+  tabla.innerHTML += `<tr><td>Total</td><td></td><td>$${(pagoMensual * meses).toFixed(2)}</td><td>$${monto.toFixed(2)}</td><td>$${totalInteres.toFixed(2)}</td><td>$${(monto + totalInteres).toFixed(2)}</td></tr>`;
+}
+
+        </script>
+
+
+
+        <script src="/amortizacionJ.js"> </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+
+    </body>
+
+</html>

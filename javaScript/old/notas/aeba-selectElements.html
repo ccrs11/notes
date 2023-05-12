@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Elements</title>
+</head>
+<body>
+    <!-- <p class="parrafo" id="mi-id">Hola este es mi párrafo</p>
+    <p clas="parrafo" id="mi-two-id"> This is my second parraf</p> -->
+
+    <ul id="lista-dinamica"></ul>
+
+
+
+    <script>
+        /* console.log(document.head);
+        console.log(document.body);
+        console.log(document.getElementById("mi-id"));
+        console.log(document.querySelector("#mi-id")); //Query
+        console.log(document.querySelector(".mi-id")); // . reference to a class an mi id is an ID
+        console.log(document.querySelector("p")); // i don't know
+        console.log(document.querySelectorAll("p")); // return a list of all p type. the first element is Hola, este es mi párrafo */
+        
+        //modify elements
+        //const parrafo=document.querySelector(".parrafo"); // returns the class parrafo
+        //parrafo.textContent="Dinamyc parra"; // modify only the text
+        //parrafo.innerHTML= "<b> Is capable to modyfy also the HTML code for that reason we have this text in bold</b>";
+
+        // create a const that select an ul
+        //const lista=document.getElementById("lista-dinamica");
+        // create an li
+        //const li=document.createElement("li");
+        // we arte going to input within the <li>
+        //li.textContent="Mi <li> dinámico";
+        //Finally we incorporate to li
+        //lista.appendChild(l1);
+
+        //fragment
+        const arrayItem=["item1","item2","item3"];
+        //Create a fragment
+        const fragment=document.createDocumentFragment();
+        arrayItem.forEach((item) => {
+            const lista=document.getElementById("lista-dinamica");
+            const li=document.createElement("li");
+            li.textContent=item;
+            fragment.appendChild(li);
+            lista.appendChild(fragment);
+        });
+
+    </script>
+
+</body>
+</html>

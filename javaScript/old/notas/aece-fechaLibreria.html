@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin:10px;
+        }
+    </style>
+    <link rel="stylesheet" href="instalacion-local/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <form action="" class="text-center">
+                    <label for="fechaPactada">Fecha Pactada</label>
+                    <input type="date" class="alert-info" id="fechaPactada">
+                    <br>
+                    <label for="fechaEntrega">Fecha Entrega</label>
+                    <input type="date" class="alert-info" id="fechaEntrega">
+                </form>
+            </div>
+            <div class="col-8">
+                <table class="table table-bordered align-content-lg-center table-striped">
+                    <thead>
+                        <th>Dias de retraso</th>
+                        <th>Multa</th>
+                    </thead>
+                    <tbody id="insertData">
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-3">
+                <label for="calcularMulta"></label>
+                <input type="button" value="calcular multa" id="calcularMulta">
+            </div>
+        </div>
+    </div>
+
+
+<script>
+    
+    const btnCalcular=document.getElementById("calcularMulta");
+    btnCalcular.addEventListener("click",lanzador);
+    //const Data = new Map();
+
+    //function Lanzador
+    function lanzador(){
+        const daysOff = calcDays();
+        const multa = calcMulta(daysOff);
+        //Data.set(daysOff,multa);
+        createTable(daysOff,multa);
+        //console.log(Data);
+    }
+
+    //function days
+    function calcDays(){
+        const fechaPactada=document.getElementById("fechaPactada").valueAsNumber;
+        const fechaEntrega=document.getElementById("fechaEntrega").valueAsNumber;
+        const milisecondsOff= fechaEntrega-fechaPactada;
+        //const days = Math.round(milisecondsOff / 1000 / 60 / 60 / 24);
+        const minutes = Math.round(milisecondsOff / 1000 / 60);
+        const hours = Math.round(minutes / 60);
+        const daysOff = Math.round(hours / 24);
+        return daysOff
+    }
+
+    //function multa
+     function calcMulta(daysOff){
+        if(daysOff<0){
+            multa=0;
+        }else if(daysOff<=3 && daysOff>0){
+            multa=daysOff*7000;
+        }else{
+            multa=daysOff*10000;
+        }
+        return multa;
+    }
+
+     function createTable(daysOff,multa){
+        const tBody1 = document.getElementById("insertData");
+        //Que muestre todo
+        //tBody1.innerHTML+= `<tr><td>${daysOff}</td><td>${multa}</td></tr>`;
+        const tr=document.createElement("tr");
+        tBody1.appendChild(tr);
+        tr.innerHTML=`<td>${daysOff}</td><td>${multa}</td>`
+        if(multa>50000){
+        //tr.style.backgroundColor="red";
+        tr.classList.add("text-primary");
+        //tr.classList.add("bg-danger")
+        tr.classList.add("")
+        }
+        console.log(tr);
+
+        //Que muestre solo el último
+        //tBody1.innerHTML= `<tr><td>${daysOff}</td><td>${multa}</td></tr>`;
+        
+        //Que recorra un Mapa
+
+
+        //Recorrer con un for
+        
+    }
+
+    
+</script>
+
+
+    <script src="instalacion-local/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

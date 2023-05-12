@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="instalacion-local/css/bootstrap.min.css">
+    <title>Class 2023-04-11</title>
+</head>
+<body>
+    
+    <!-- <li class="list" id="dinamic-list">
+        <b>Nombre: </b> <span class="text-danger">description...</span>
+    </li> -->
+
+    <ul id="dinamic-list"></ul>
+
+    <template>
+        <li class="list" id="dinamicccc-list">
+            <b>Nombre: </b> <span class="text-danger">description...</span>
+        </li>
+    </template>
+
+
+    <script>
+
+        //THIS IS WITH TEMPLATE
+        const arrayItem=["item 1","item 2","item 3"];
+
+        const lista=document.getElementById("dinamic-list");
+        const template =document.querySelector("template").content;
+        const fragment=document.createDocumentFragment();
+        //console.log(template);
+        arrayItem.forEach((item)=>{
+            template.querySelector("span").textContent=item;
+            const clones= template.cloneNode(true);
+            fragment.appendChild(clones);
+        })
+        lista.appendChild(fragment);
+
+        //PRIMERO LO HICIMOS CON FRAGMENT
+
+        /* const lista=document.getElementById("dinamic-list");
+        const arrayItem=["item 1","item 2","item 3"];
+        const fragment=document.createDocumentFragment();
+        arrayItem.forEach((item) => {
+            //creamos li
+        const li=document.createElement("li");
+            //Agregamos clase a li
+        li.classList.add("list");
+            //creamos b
+        const b = document.createElement("b");
+            //Agregamos texto a b
+        b.textContent="Nombre: ";
+            //Creamos el span
+        const span = document.createElement("span");
+            //Agregamos clase al span
+        span.classList.add("text-danger");  
+        //agregamos texto al span
+        span.textContent=item;
+        //agregamos nodos hijos a li
+        li.appendChild(b);
+        li.appendChild(span);
+        //agregamos li al fragmento
+        fragment.appendChild(li);
+        });*/
+
+        //lista.appendChild(fragment);
+ 
+    </script>
+
+    <script src="/instalacion-local/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

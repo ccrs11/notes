@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventary of products PRO</title>
+    <link rel="stylesheet" href="./afaf-styles.css">
+    <link rel="stylesheet" href="./instalacion-local/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-align:center;" >Product Inventary</h1>
+        <div class="row">
+            <div class="col-7">
+                //form
+                <form class="form-horizontal">
+
+                    <div class="form-group row">
+                        <label for="codigo" class="col-sm-2 col-form-label">Codigo</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" id="codigo" name="codigo">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="descripcion" class="col-sm-2 col-form-label">Descripcion</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="descripcion" name="descripcion">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="precioCompra" class="col-sm-2 col-form-label">Precio de Compra</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" id="precioCompra" name="precioCompra">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="precioVenta" class="col-sm-2 col-form-label">Precio de Venta</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" id="precioVenta" name="precioVenta">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="cantidadBodega" class="col-sm-2 col-form-label">Cantidad en Bodega</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" id="cantidadBodega" name="cantidadBodega">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="cantidadMinimaBodega" class="col-sm-2 col-form-label">Cantidad Minima en
+                            Bodega</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" id="cantidadMinimaBodega"
+                                name="cantidadMinimaBodega">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="cantidadMaximaInventario" class="col-sm-2 col-form-label">Cantidad Maxima en
+                            Inventario</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" id="cantidadMaximaInventario"
+                                name="cantidadMaximaInventario">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="porcentajeDescuento" class="col-sm-2 col-form-label">Porcentaje de Descuento</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" id="porcentajeDescuento"
+                                name="porcentajeDescuento">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="categoria" class="col-sm-2 col-form-label">Tipo de Producto</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" id="categoria" name="categoria">
+                                <option value="escoger" selected>Escoger Producto</option>
+                                <option value="vestuario">Vestuario</option>
+                                <option value="calzado">Calzado</option>
+                            </select>
+
+                    <div class ='form-group row' id="tallas">
+                        <label for="talla" class="col-sm-2 col-form-label">talla</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="talla" id="talla">
+                        </div>
+                    </div>
+                    <div  class ='form-group row' id="planchados">
+                        <label for="planchado" class="col-sm-2 col-form-label" >¿se puede planchar?</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" id="planchado" name="categoria" class="form-control-lg">
+                                <option value="true">Sí</option>
+                                <option value="false">No</option>
+                            </select>
+                        </div>
+                    </div>
+
+                        </div>
+                    </div>
+                    <br>
+                    <div>
+                        <button type="button" class="btn btn-primary" id="anadirButton" >Anadir Prenda</button>
+                    </div>
+                </form> 
+            </div>
+            <div class="col-5">
+                //here will be put in stadistics
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                //here will be put the tarjetas
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="./afaf-main.js" type="module"></script>
+    <script src="./instalacion-local/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+#titulo{
+    color:teal;
+}
+p>strong:nth-child(1){
+    color:red;
+}
+.destacado{
+    color:darkorange;
+}
+#subtitulo{
+    color:blue;
+}
+p>a{
+    color:red
+}
+p>a>em{
+    color:blue;
+}
+div>p>a{
+    color:green;
+}
+p>.especial{
+    color:purple;
+}
+.especial{
+    color:darkorange;
+}
+table>tbody>tr>td{
+    color:green;
+}
+table>caption{
+    color:blue;
+}
+table>tbody>tr>th{
+    color:red;
+}
+table>tfoot>tr>th{
+    color:red;
+}
+div>p{
+    color:olive;
+}
+#especial{
+    color:magenta;
+}
+table>tbody>tr>td>strong{
+    color:darkorange;
+}
+

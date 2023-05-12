@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="instalacion-local/css/bootstrap.min.css">
+    <title>Consumo de Agua</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-5"></div>
+                <form class="form-control-color">
+                    <label for="codigo">Código</label>
+                    <input type="number" name="codigo" id="codigo">
+                    <label for="nombre">Nombre</label>
+                    <input type="number" name="nombre" id="nombre">
+                    <label for="estrato">Estrato</label>
+                    <input type="number" name="estrato" id="estrato">
+                    <label for="consumo">Consumo</label>
+                    <input type="number" name="consumo" id="consumo">
+                    <hr>
+                    <input type="button" value="calcular" id="calcular">
+                </form>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-5">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Resultado</h5>
+                      <h6 class="card-subtitle mb-2 text-muted" id="putHere">Card subtitle</h6>
+                      </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+
+const codigo =document.getElementById("codigo");
+const nombre =document.getElementById("nombre");
+const estrato=document.getElementById("estrato");
+const consumo=document.getElementById("consumo");
+const btnCalcular=document.getElementById("putHere");
+
+class Suscriptor{
+    constructor(codigo,nombre,estrato,consumo){
+        this._codigo=codigo;
+        this._nombre=nombre;
+        this._estrato=estrato;
+        this._consumo=consumo;
+    }
+    valorPagar(){
+        const codEstrato=new Map([[1,10_000],[2,15_000],[3,20_000],[4,25_000],[5,30_000]]);
+        let tarifaBasica=codEstrato.get(parseInt(this._estrato));
+        return tarifaBasica+(this._consumo*100);
+    }
+}
+
+const sus1 = new Suscriptor(12,"juan",1,15);
+
+console.log(sus1.valorPagar());
+
+function createEtiqueta(){
+    const label=document.getElementById("putHere");
+    label.innerHTML="";
+    console.log(label);
+}
+
+</script>
+<script src="instalacion-local/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test from cero with fragment</title>
+    <link rel="stylesheet" href="instalacion-local/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <h1>Calcular de Interes</h1>
+        <div class="row">
+            <div class="col-3" style="display: inline-table;">
+                <form class="form-control-lg
+                    <label for=" cedula">Ingrese el número de cédula</label>
+                    <input type="number" name="cedula" id="cedula" class="form-control-lg" />
+                    <label for="nombre">Ingrese el nombre del empleado</label>
+                    <input type="text" name="nombre" id="nombre" class="form-control-lg" />
+                    <label for="categoria">Escoge una categoria: </label>
+                    <select id="categoria" name="categoria" class="form-control-lg">
+                        <option value="Auxiliar A" selected>Auxiliar A</option>
+                        <option value="Auxiliar B">Auxiliar B</option>
+                        <option value="Técnico A">Técnico A</option>
+                        <option value="Técnico B">Técnico B</option>
+                        <option value="Profesional A">Profesional A</option>
+                        <option value="Profesional B">Profesional B</option>
+                        <option value="Director A">Director A</option>
+                        <option value="Director B">Director B</option>
+                        <option value="Gerente Departamento">Gerente Departamento</option>
+                        <option value="Gerente General">Gerente General</option>
+                    </select>
+                    <label for="calcular"></label>
+                    <input id="calcular" type="button" class="btn btn-primary sticky-bottom" value="calcular"
+                        onclick="darValor();" />
+                </form>
+
+            </div>
+            <br>
+            <div class="col-8">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Cédula</th>
+                            <th>Nombre</th>
+                            <th>Categoria</th>
+                            <th>Salario bruto</th>
+                            <th>Auxilio Transporte</th>
+                            <th>Bonificaciones</th>
+                            <th>Descuento EPS</th>
+                            <th>Descuento Pension</th>
+                            <th>Salario Neto</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ingresarDatos">
+                            
+                    </tbody>
+
+                    <tfoot id="ingresarDos">
+
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <h1>Calcular de Interes</h1>
+        <div class="row">
+            <div class="col-3" style="display: inline-table;"></div>
+                <div class="col-8">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Cantidad de empleados</th>
+                                <th>Empleado Menos Gana</th>
+                                <th>Promedio Salarios</th>
+                                <th>Empleado Más Gana</th>
+                                <th>Valor Total Nómina</th>
+                            </tr>
+                        </thead>
+                        <tbody id="ingresarDatos2">
+                        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <label for="mirar"></label>
+    <input id="mirar" type="button" class="btn btn-outline-secondary" value="mirar" onclick="lanzar();" />
+
+    <script src="aebh_testCampus2copy.js"></script>
+    <script src="instalacion-local//js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

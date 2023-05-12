@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Propieadad Grid-Area</title>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        gap: 10px;
+        background-color: #2196f3;
+        padding: 10px;
+      }
+
+      .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+      }
+
+      .item8 {
+        grid-area: 1 / 2 / 5 / 6;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>La propiedad del área de cuadrícula</h1> 
+    
+    <p>Puede usar la propiedad <em>grid-area</em> para especificar dónde colocar un elemento.</p> 
+    
+    <p>La sintaxis es:</p> 
+    
+    <p>cuadrícula-fila-inicio/cuadrícula-columna-inicio/cuadrícula-fila-fin/cuadrícula-columna-final.</p> 
+    
+    <p>El elemento 8 comenzará en la línea de fila 1 y la línea de columna 2, y terminará en la línea de fila 5 y la línea de columna 6:</p>
+
+    <div class="grid-container">
+      <div class="item1">1</div>
+      <div class="item2">2</div>
+      <div class="item3">3</div>
+      <div class="item4">4</div>
+      <div class="item5">5</div>
+      <div class="item6">6</div>
+      <div class="item7">7</div>
+      <div class="item8">8</div>
+      <div class="item9">9</div>
+      <div class="item10">10</div>
+      <div class="item11">11</div>
+      <div class="item12">12</div>
+      <div class="item13">13</div>
+      <div class="item14">14</div>
+      <div class="item15">15</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .item1 {
+        grid-area: myArea;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-areas: "myArea myArea myArea myArea myArea";
+        gap: 10px;
+        background-color: #2196f3;
+        padding: 10px;
+      }
+
+      .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>La propiedad del área de cuadrícula</h1> 
+    <p>Puede usar la propiedad <em>grid-area</em> para nombrar los elementos de la cuadrícula.</p> 
+    
+    <p>Puede hacer referencia al nombre cuando configure el diseño de la cuadrícula, utilizando la propiedad <em>grid-template-areas</em> en el contenedor de la cuadrícula.</p> 
+    
+    <p>Item1, se llama "myArea" y ocupará el lugar de las cinco columnas:</p>
+
+    <div class="grid-container">
+      <div class="item1">1</div>
+      <div class="item2">2</div>
+      <div class="item3">3</div>
+      <div class="item4">4</div>
+      <div class="item5">5</div>
+      <div class="item6">6</div>
+    </div>
+  </body>
+</html>

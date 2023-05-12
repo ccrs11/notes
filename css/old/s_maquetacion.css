@@ -1,0 +1,109 @@
+*{
+    margin:0;
+    padding:0;
+}
+header{
+    width: 100%;
+    height: 60px;
+
+}
+div>section>article>header{
+    height: 20px;
+}
+div>section>article>body{
+    height: 10px;
+}
+.back{
+    background-color: gray;
+}
+article{
+    margin-top: 10px;
+    padding: 10px;
+}
+h1{
+    text-size-adjust:initial;
+}
+
+.menu{
+    height: 30px;
+    width: 100%;
+    z-index: 80;
+    right: 0;
+}
+.menu ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+.menu li:hover{
+    background-color: gray;
+    opacity: 0.8;
+    }
+section{
+    float:left;
+    width:70%;
+    height: 800px;
+}
+aside{
+    float:right;
+    width: 30%;
+    height: 800px;
+
+}
+footer{
+    width: 100%;
+    height: 80px;
+    float:inline-end;
+    text-align:center;
+    font-size: x-large;
+}
+.one li {
+    margin-left: 30px;
+}
+#carlos{
+    margin-left: 30px;
+}
+body{
+    width: 60%;
+}
+#contenido { 
+    width: 800px; 
+    margin: 0 auto;
+}
+ul {
+    list-style: none;
+}
+#all{
+    background-color:azure;
+}
+@media only screen and (max-width:600px){
+    #contenido{ 
+        width: 100%;
+    }
+    footer{
+        background-color:blue ;
+        text-align: left;
+        font-size-adjust: 10px;
+    }
+    aside{
+        width: 100%;
+        height: 100%;
+    }
+    section{
+        width: 100%;
+        height: 100%;
+    }
+}
+@media only screen and (max-width:480px){
+    aside{
+        display:none;
+    }
+
+}
+@media only screen and (orientation:landscape){
+    footer{
+        background-color: brown;
+        
+    }
+}

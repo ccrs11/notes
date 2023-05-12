@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas Clase 2023-04-10</title>
+</head>
+<body>
+    <h1>Modularity</h1>
+    <h2>Modules</h2>
+    <p>One module is a document that makes simple managment a program. Why is this important? By organization and other this
+        it is easily work with different people, to encapsulate the information. maintenance. 
+    </p>
+    <p>
+        there are some reserve words that allows work with this thoose words are import and export
+    </p>
+    <p>
+        the modules require type="module"
+    </p>
+    <h3>
+        async vd defer there are some structures
+    </h3>
+    <h3> asterisco</h3>
+    <p>Se usa para importar todas las funciones de un módulo.</p>
+    <h3>Usar la constante de un archivo en específico</h3>
+    <p>
+        import{factorial, PI as PII} from './archivo3.js';
+        console.log(PII) con los alias se puede saber exactamente de donde se está trayendo la información
+    </p>
+    <h3>Mensaje</h3>
+    <p>En este caso se usa una función flecha
+        const mensaje = () =>{
+            const nombre="Oscar";
+            const edad=21;
+            return nombre + "tiene" + edad + "años.";
+        };
+        export{mensaje};
+    </p>
+    <h3>Exportar objeto archivo1 al archivo 2 y abrirlo con el tester</h3>
+    <h3>Export defoult</h3>
+    <p>Only can be exist one export.default by file and the way to call in is </p>
+
+        <script src="afad-archivo2.js" type="module"></script>
+
+</body>
+</html>

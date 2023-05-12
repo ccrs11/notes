@@ -1,0 +1,95 @@
+<!--  _______ _______ _______ _______ _______ _______ 
+|\     /|\     /|\     /|\     /|\     /|\     /|
+| +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |
+| | c | | | c | | | r | | | s | | | 1 | | | 1 | |
+| +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |
+|/_____\|/_____\|/_____\|/_____\|/_____\|/_____\|
+
+
+Company: ccrs11
+Date: [2023-04-21]
+Programmer: [Cristian Camilo Rojas Sepúlveda]
+Description: [This code manages pending invoices .js]
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="instalacion-local/css/bootstrap.min.css">
+    <style>
+        body{
+            background-color:rgb(248, 238, 223) ;
+        }
+        *{
+            margin: 10px;
+        }
+    </style>
+    <title>Gestionar Facturas</title>
+</head>
+<body>
+
+    <!-- Escriba un programa WEB que gestione las facturas pendientes de cobro de una
+    empresa. -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3">
+                <!-- acá va el formulario para ingresar datos y los botones de agregar y eliminar -->
+                <form class="form-select-lg form-control">
+                    <label for="numeroFactura"> Ingresar el número de la Factura </label>
+                    <input type="number" name="numeroFactura" id="numeroFacturaInput">
+                    <label for="valorFactura">Ingresar el valor de la factura</label>
+                    <input type="number" name="valorFactura" id="valorFacturaInput">
+                    <hr>
+                    <input type="button" value="Agregar Factura" id="agregarFactura">
+                    <input type="button" value="Pagar Factura" id="eliminarFactura">
+                </form>
+            </div>
+            <div class="col-7">
+                <!-- acá va la tabla de listado de facturas -->
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Número de Factura</th>
+                            <th>Precio de la Factura</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodyFill">
+                        
+                    </tbody>
+                </table>
+                
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-10">
+                <!-- acá va la tabla final de estadisticas -->
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Factturas Ingresadas</th>
+                            <th>Facturas Eliminadas</th>
+                            <th>Facturas Actuales</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ingresarDatos2">
+                    
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    <script src="/aecb-gestionarFacturas.js"></script>
+    <script src="instalacion-local/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

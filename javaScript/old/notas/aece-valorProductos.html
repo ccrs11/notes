@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="instalacion-local/css/bootstrap.min.css">
+    <title>Calcular el valor de los productos</title>
+</head>
+<body>
+    <div class="container"></div>
+        <div class="row">
+            <div class="col-3">
+                <!-- acá va el formulario para ingresar datos y los botones de agregar y eliminar -->
+                <form class="form-select-lg form-control">
+                    <label for="numeroFactura"> Ingresar el código del producto</label>
+                    <input type="number" name="numeroFactura" id="codeInput">
+                    <label for="valorFactura">Ingresar la cantidad de productos</label>
+                    <input type="number" name="valorFactura" id="countInput">
+                    <hr>
+                    <input type="button" value="Agregar prodcuto" id="agregarProducto">
+                    <input type="button" value="calcular Total" id="calcularTotal">
+                </form>
+            </div>
+            <div class="col-7">
+            <!-- acá va la tabla de listado de facturas -->
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>NOMBRE DEL PRODUCTO</th>
+                            <th>CANTIDAD DEL PRODUCTO</th>
+                            <th>VALOR UNITARIO</th>
+                            <th>VALOR TOTAL</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodyFill">
+                    
+                    </tbody>
+                    <tfoot id="resultado">
+                        
+                    </tfoot>
+                </table>
+            </div>
+        </div>    
+    </div>
+
+
+
+
+    <script src="aece-valorProductos.js"></script>
+    <script src="instalacion-local/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

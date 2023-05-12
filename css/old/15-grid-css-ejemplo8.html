@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>La propiedad de alineación de contenido</title>
+
+    <style>
+      .grid-container {
+        display: grid;
+        height: 400px;
+        align-content: start;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        background-color: #2196f3;
+        padding: 10px;
+      }
+
+      .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+      }
+    </style>
+
+  </head>
+  <body>
+    <h1>La propiedad de alineación de contenido</h1>
+
+    <p>Utilice la propiedad <em>align-content</em> para alinear verticalmente la cuadrícula dentro del contenedor.</p> 
+    
+    <p>El valor "inicio" alineará las filas al principio del contenedor:</p>
+
+    <div class="grid-container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </div>
+  </body>
+</html>

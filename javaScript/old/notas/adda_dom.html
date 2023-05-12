@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="/adda_ordenarNombres.js"></script>
+
+
+    <title>Explorando el DOM</title>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Ordenar Arrays de cadenas</h1>
+                <hr>
+                <p class="lead">
+                    Ingrese nombres en la caja de texto de abajo y ordene este listado el cual apareceran en el área de texto.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <form action="" name="miformulario">
+                    <div class="col-12 mb-3 input-group">
+                        <label for="nombre" class="form-label me-2">Nombre: </label>
+                        <input type="text" id="nombre" name="nombre" value="" class="form-control-lg" aria-describedly="agregarNombre">
+                        <input type="button" value="Agregar y ordenar nombre" name="agregarnombre" id="agregarnombre" onclick="sorting2();" class="btn btn-primary form-control-lg">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <h2>Nombres Ordenados</h2>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <textarea name="ordenados" id="ordenados" cols="60" rows="10" placeholder="aquí aparecen los nombres" class="from-control-lg" readonly></textarea>
+            </div>
+            <div class="col-3">
+                <input type="button" value="Limpiar" name="limpiarTxtArea" id="limpiarTxtArea" onclick="cleanTxtArea();" class="btn btn-primary">
+            </div>
+        </div>
+
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!-- localStorage.setItem("Nombre", "Wilfer");//guardar datos tipo mapa
+localStorage.Apellido="Acosta Rodriguez";//guardar datos con odjeto
+
+let nombre = localStorage.getItem("Nombre");//traer el dato o recuperar
+let apellido = localStorage.getItem("Apellido");//traer el dato
+// for (let i = 0 ;i<localStorage.length;i++){
+//     let k= localStorage.key(i);
+//     console.log(`llave: ${k} su valor es: ${localStorage.getItem(k)}.`);
+// }
+//otra forma de iterar rapidamente
+for(let k in localStorage){
+    if(!localStorage.hasOwnProperty(k))
+        continue
+    console.log(`llave: ${k} su valor es: ${localStorage.getItem(k)}.`);
+}
+//acceder a las claves con objete
+alert(nombre + " "+ apellido);
+
+ejercicio localstorage
+html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="instalacion-local/css/bootstrap.min.css">
+</head>
+<style>
+    .container{
+        width: 500px;
+        margin-top: 50px;
+        text-align: center;
+    }
+</style>
+</style>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>ejemplo-localStorage</h1>
+            <input id="nombre" type="text" placeholder="Nombre">
+            <br>
+            <input id="apellido" type="text" placeholder="Apellido">
+            <br>
+            <button onclick="guardar()">Guardar</button>
+            <br>
+            <label for="">Nombre almacenado: </label>
+            <input type="text"  id="mostrarNombre" readonly>
+            <label for="">Apellido almacenado: </label>
+            <input type="text" id="mostrarApellido" readonly>
+            <button onclick="cargar()">Guardar</button>
+        </div>
+    </div>
+
+
+<script>
+function guardar(){
+    nombre = document.getElementById("nombre").value;
+    apellido = document.getElementById("apellido").value;
+    localStorage.setItem("Nombres",nombre);
+    localStorage.setItem("Apellidos",apellido);
+}
+function cargar(){
+    document.getElementById("mostrarNombre").value = localStorage.getItem("Nombres");
+    document.getElementById("mostrarApellido").value = localStorage.getItem("Apellidos");
+}
+</script>
+
+    <script src="instalacion-local/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

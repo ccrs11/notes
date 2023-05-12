@@ -1,0 +1,73 @@
+Ejercicios de Listas en Python
+Les comparto un documento con una serie de ejercicios de listas en Python. La intención es que aumente su habilidad en el tema y el pensamiento computacional.
+CAMPUS LAB
+
+Ejercicios de LISTAS en Python
+
+INTRODUCCIÓN
+A continuación, encontrarás un listado de ejercicios para realizar
+con Python.
+
+EJERCICIOS
+1. Imprime los primeros cinco elementos de una lista.
+2. Agrega un elemento nuevo al final de una lista.
+3. Imprime el número de elementos de una lista.
+4. Crea una nueva lista que contenga solo los elementos pares de una
+lista dada.
+5. Imprime los elementos de una lista en orden inverso.
+6. Crea una lista que contenga los números del 1 al 10 y luego
+imprime solo los números impares.
+7. Reemplaza el segundo elemento de una lista con un nuevo valor.
+8. Crea una lista que contenga los nombres de tus amigos y luego
+ordena la lista alfabéticamente.
+9. Crea una lista que contenga las letras del alfabeto y luego
+imprime solo las consonantes.
+10. Crea una lista vacía y luego agrega varios elementos a la
+lista utilizando un bucle for.
+11. Crea una lista vacía y luego agrega los números del 1 al 10 a
+la lista utilizando un bucle for.
+12. Crea una lista de 5 nombres y ordena la lista alfabéticamente.
+13. Crea una lista de 10 números y encuentra el número más grande
+y el número más pequeño en la lista.
+14. Crea una lista de 10 números y elimina todos los números pares
+de la lista.
+
+15. Crea dos listas, una con los nombres de los productos de una
+tienda y otra con los precios correspondientes. Luego, une las
+dos listas en un solo diccionario.
+16. Crea una lista de 10 números y calcula la suma, el promedio,
+la desviación estándar y la varianza de los números en la lista.
+17. Crea una lista de 10 nombres y encuentra todos los nombres que
+contienen la letra "a".
+18. Crea una lista de 10 números y encuentra todos los números que
+son múltiplos de 3.
+19. Crea una lista de 10 nombres y encuentra el nombre más largo y
+el nombre más corto en la lista.
+20. Crea una lista de 10 palabras y ordena la lista según la
+longitud de cada palabra, de la palabra más corta a la palabra
+más larga.
+21. Crea una lista con los ingresos mensuales de una empresa y
+calcula el ingreso total del año.
+22. Crea una lista con los gastos mensuales de una empresa y
+calcula el gasto total del año.
+23. Crea una lista con los nombres de los empleados de una empresa
+y ordena la lista alfabéticamente.
+24. Crea una lista con los nombres de los empleados y sus
+salarios, y luego ordena la lista por salarios de mayor a menor.
+25. Crea una lista con los nombres de los productos de una empresa
+y sus precios, y luego calcula el precio promedio de los
+productos.
+26. Crea una lista con los nombres de los clientes y la cantidad
+de compras que han hecho, y luego encuentra al cliente que más
+compras ha hecho.
+27. Crea una lista con los nombres de los proveedores de una
+empresa y sus direcciones, y luego imprime solo las direcciones.
+
+28. Crea una lista con los nombres de las sucursales de una
+empresa y la cantidad de empleados en cada sucursal, y luego
+encuentra la sucursal con más empleados.
+29. Crea una lista con las ventas mensuales de una empresa y luego
+imprime el mes en el que se realizaron las ventas más altas.
+30. Crea una lista con los nombres de los proyectos de una empresa
+y las fechas de inicio y finalización, y luego ordena la lista
+por fecha de finalización.

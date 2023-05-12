@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="instalacion-local/css/bootstrap.min.css">
+    <style>
+        #tallas{
+            display: none;
+        }
+        #planchados{
+            display:none;
+        }
+    </style>
+    <title>Producto -TestJavaScript</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3">
+                <form class="form-control-lg">
+                    <label for="codigo">Codigo</label>
+                    <input type="number" class="form-control" name="codigo" id="codigo">
+                    <label for="descripcion">descripcion</label>
+                    <input type="text" class="form-control"  name="descripcion" id="descripcion">
+                    <label for="precioCompra">precioCompra</label>
+                    <input type="number" class="form-control" name="precioCompra" id="precioCompra">
+                    <label for="precioVenta">precioVenta</label>
+                    <input type="number" class="form-control" name="precioVenta" id="precioVenta">
+                    <label for="cantidadBodega">cantidadBodega</label>
+                    <input type="number" class="form-control" name="cantidadBodega" id="cantidadBodega">
+                    <label for="cantidadMinimaBodega">cantidadMinimaBodega</label>
+                    <input type="number" class="form-control" name="cantidadMinimaBodega" id="cantidadMinimaBodega">
+                    <label for="cantidadMaximaInventario">cantidadMaximaInventario</label>
+                    <input type="number" class="form-control" name="cantidadMaximaInventario" id="cantidadMaximaInventario">
+                    <label for="porcentajeDescuento">porcentajeDescuento</label>
+                    <input type="number" class="form-control" name="porcentajeDescuento" id="porcentajeDescuento">
+                    <br>
+                    <label for="categoria">tipo de producto</label>
+                    <select id="categoria" name="categoria" class="form-control-lg">
+                        <option value="escoger" selected>Escoger Producto</option>
+                        <option value="vestuario">vestuario</option>
+                        <option value="calzado">calzado</option>
+                    </select>
+                    <div id="tallas">
+                        <label for="talla">talla</label>
+                        <input type="text" name="talla" id="talla">
+                    </div>
+                    <div id="planchados">
+                        <label for="planchado">¿se puede planchar?</label>
+                        <select id="planchado" name="categoria" class="form-control-lg">
+                            <option value="true">Sí</option>
+                            <option value="false">No</option>
+                        </select>
+                    </div>
+
+                    <input type="button" class="alert-dark" value="Añadir" id="btnAnadir">
+                    
+                </form>
+            </div>
+            <div class="col-7">
+                <!-- estadistics -->
+                <p>Cantidad de productos ingresados: <span id="cantidadProd"> 0 </span> </p>
+                <p>Cantidad de prendas de vestir ingresadas: <span id="cantidadPrenV"> 0 </span> </p>
+                <p>Cantidad de prendas de productos a solicitar: <span id="solicitarPed"> 0 </span> </p>
+                <p>El calzado que posee la menor cantidad de productos tiene el codigo <span id="mayorcodigo">  </span> y la descripción <span id="mayordescripcion"> </span></p>
+
+
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-10">
+                <div id="putInfo">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="./aeci-clasesPrueba.js"></script>
+    <script src="./instalacion-local/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

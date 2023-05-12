@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="instalacion-local/css/bootstrap.min.css">
+    <title>Target</title>
+</head>
+<body>
+    <div class="container bg-warning text-center">
+        <h1 class="lead py-5">Ejemplo de eventos JS - Aumentar y disminuir</h1>
+
+        <h2 class="py-5">Contador</h2>
+        <button class="btn btn-primary">Aumentar</button>
+        <button class="btn btn-danger">disminuir</button>
+
+        <h3 class="py-5">
+            contador: <span id="idContador">0</span>
+        </h3>
+    </div>
+
+
+    <script>
+
+        //Sin target
+/* 
+        const TXTCONTADOR=document.getElementById("idContador");
+        const BTN1=document.querySelector(".btn-primary");
+        const BTN2=document.querySelector(".btn-danger");
+        let iContador=0;
+
+        BTN1.addEventListener("click", ()=>{
+            aumentarValor()
+        });
+
+        BTN2.addEventListener("click", ()=>{
+            disminuirValor()
+        });
+
+        function aumentarValor(){
+            TXTCONTADOR.textContent= ++iContador;
+        }
+
+        function disminuirValor(){
+            TXTCONTADOR.textContent= --iContador;
+        } */
+
+        //*************Con target***********
+        let iContador=0;
+        const TXTCONTADOR=document.getElementById("idContador");
+        const CONTAINER =document.querySelector(".container");
+        // console.log(e); podemos ver a dónde selecciona.
+        CONTAINER.addEventListener("click",(e)=>{
+            if(e.target.classList.contains("btn-primary"))
+                TXTCONTADOR.textContent= ++iContador;
+            else if(e.target.classList.contains("btn-danger"))
+                TXTCONTADOR.textContent= --iContador;
+
+            e.stopPropagation(); //No quiere que la acción se propague hacia los padres
+        })
+
+        
+
+    </script>
+
+    <script src="instalacion-local/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

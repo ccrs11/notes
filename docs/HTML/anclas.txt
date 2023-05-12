@@ -1,0 +1,149 @@
+INTERNET
+Internet (el internet o, también, la internet)3​ es un conjunto descentralizado de redes de comunicaciones interconectadas, que utilizan la familia de protocolos TCP/IP, lo cual garantiza que las redes físicas heterogéneas que la componen constituyen una red lógica única de alcance mundial. Sus orígenes se remontan a 1969, cuando se estableció la primera conexión de computadoras, conocida como ARPANET, entre tres universidades en California (Estados Unidos).
+
+Uno de los servicios que más éxito ha tenido en internet ha sido la World Wide Web (WWW o la Web), hasta tal punto que es habitual la confusión entre ambos términos. La WWW es un conjunto de protocolos que permite, de forma sencilla, la consulta remota de archivos de hipertexto. Esta fue un desarrollo posterior (1990) y utiliza internet como medio de transmisión.4​
+
+Existen, por tanto, muchos otros servicios y protocolos en internet, aparte de la Web: el envío de correo electrónico (SMTP), la transmisión de archivos (FTP y P2P), las conversaciones en línea (IRC), la mensajería instantánea y presencia, la transmisión de contenido y comunicación multimedia —telefonía (VoIP), televisión (IPTV)—, los boletines electrónicos (NNTP), el acceso remoto a otros dispositivos (SSH y Telnet) o los juegos en línea.4​5​6​
+
+El uso de internet creció rápidamente en el hemisferio occidental desde la mitad de la década de 1990 y desde la década de 2000 en el resto del mundo.7​ En los 20 años desde 1995, el uso de internet se ha multiplicado por 100, cubriendo en 2015 a la tercera parte de la población mundial.8​9​
+
+La mayoría de las industrias de comunicación, incluyendo telefonía, radio, televisión, correo postal y periódicos tradicionales están siendo transformadas o redefinidas por Internet, y permitió el nacimiento de nuevos servicios como correo electrónico (e-mail), telefonía por internet, televisión por Internet, música digital, y vídeo digital. Las industrias de publicación de periódicos, libros y otros medios impresos se están adaptando a la tecnología de los sitios web, o están siendo reconvertidos en blogs, web feeds o agregadores de noticias. Internet también ha permitido o acelerado nuevas formas de interacción personal por medio de mensajería instantánea, foros de Internet, y redes sociales. El comercio electrónico ha crecido exponencialmente tanto por grandes cadenas como pequeñas y medianas empresas o emprendedores, ya que ahora pueden vender por internet productos o servicios hacia todo el mundo.10​ Los servicios interempresariales y financieros en Internet afectan las cadenas de suministro en todas las industrias.
+
+Internet no tiene una gobernanza centralizada única ni en la implementación tecnológica ni en las políticas de acceso y uso; cada red constituyente establece sus propias políticas.11​ Las definiciones excesivas de los dos espacios de nombres principales en Internet, el Protocolo de Internet (dirección IP) y el Sistema de nombres de dominio (DNS), están dirigidos por una organización mantenedora, la Corporación de Internet para la Asignación de Nombres y Números (ICANN).12​ La base técnica y la estandarización de los protocolos centrales es una actividad del Grupo de Trabajo de Ingeniería de Internet (IETF), una organización internacional sin fines de lucro.13​
+
+INDICE
+---------
+Índice
+1	Etimología
+2	Origen
+3	Tecnología de internet
+3.1	Enrutamiento y capas de servicio
+3.2	Acceso a Internet
+3.2.1	Internet móvil
+3.3	Nombres de dominios
+3.4	Buscadores
+4	Gobernanza
+5	Tamaño
+5.1	Usuarios
+5.2	Páginas
+5.3	Servicios o aplicaciones específicas
+6	Uso actual
+6.1	Educación distribuida
+6.2	Trabajo colaborativo y remoto
+6.3	Servicios de red social
+6.4	Búsqueda en Internet
+7	Impacto social
+7.1	Filantropía
+7.2	Ocio
+7.3	Efectos en el cerebro
+7.4	Efectos en las sociedades
+7.5	Fuente de información
+7.6	Trabajo
+7.7	Publicidad
+7.8	Censura
+7.9	Internet en obras de ficción
+7.10	Efecto desinhibidor de Internet
+8	Véase también
+9	Referencias
+10	Bibliografía
+
+Etimología
+La palabra Internet (también interred) es simplemente una contracción de la frase interconnected network (red interconectada). Sin embargo cuando se escribe con una "I" mayúscula Internet se refiere a un conjunto a nivel mundial de redes interconectadas, así que Internet es una interred. 14
+
+Origen
+Sus orígenes se remontan a la década de 1960, dentro de ARPA (hoy DARPA, las siglas en inglés de la Defense Advanced Research Projects Agency), como respuesta a la necesidad de esta organización de buscar mejores maneras de usar los computadores de entonces, pero enfrentados al problema de que los principales investigadores y laboratorios deseaban tener sus propios computadores, lo que no solo era más costoso, sino que provocaba una duplicación de esfuerzos y recursos. El verdadero origen de Internet15​ nace con ARPANET (Advanced Research Projects Agency Network o Red de la Agencia para los Proyectos de Investigación Avanzada de los Estados Unidos), que legó el trazado de una red inicial de comunicaciones de alta velocidad a la cual fueron integrándose otras instituciones gubernamentales y redes académicas durante los años 70.16​17​18​
+
+Investigadores, científicos, profesores y estudiantes se beneficiaron de la comunicación con otras instituciones y colegas en su rama, así como de la posibilidad de consultar la información disponible en otros centros académicos y de investigación. De igual manera, disfrutaron de la nueva habilidad para publicar y hacer disponible a otros la información generada en sus actividades.19​20​
+
+En el mes de julio de 1961, Leonard Kleinrock publicó desde el MIT el primer documento sobre la teoría de conmutación de paquetes. Kleinrock convenció a Lawrence Roberts de la factibilidad teórica de las comunicaciones vía paquetes en lugar de circuitos, lo cual resultó ser un gran avance en el camino hacia el trabajo informático en red. El otro paso fundamental fue hacer que los ordenadores dialogaran entre sí. Para explorar este terreno, en 1965, Roberts conectó una computadora TX2 en Massachusetts con una Q-32 en California a través de una línea telefónica conmutada de baja velocidad, creando así la primera (aunque reducida) red de computadoras de área amplia jamás construida.21​22​23​
+
+1969: La primera red interconectada nace el 21 de noviembre de 1969, cuando se crea el primer enlace entre las universidades de UCLA y Stanford por medio de una línea telefónica conmutada, y gracias a los trabajos y estudios anteriores de varios científicos y organizaciones desde 1959 (ver: Arpanet). El mito de que ARPANET, la primera red, se construyó simplemente para sobrevivir a ataques nucleares sigue siendo muy popular. Sin embargo, este no fue el único motivo. Si bien es cierto que ARPANET fue diseñada para sobrevivir a fallos en la red, la verdadera razón para ello era que los nodos de conmutación eran poco fiables, tal y como se atestigua en la siguiente cita:
+A raíz de un estudio de RAND, se extendió el falso rumor de que ARPANET fue diseñada para resistir un ataque nuclear. Esto nunca fue cierto, solamente un estudio de RAND, no relacionado con ARPANET, consideraba la guerra nuclear en la transmisión segura de comunicaciones de voz. Sin embargo, trabajos posteriores enfatizaron la robustez y capacidad de supervivencia de grandes porciones de las redes subyacentes. (Internet Society, A Brief History of the Internet)
+1972: Se realiza la primera demostración pública de ARPANET, una nueva red de comunicaciones financiada por DARPA que funcionaba de forma distribuida sobre la red telefónica conmutada. El éxito de esta nueva arquitectura sirvió para que, en 1973, DARPA iniciara un programa de investigación sobre posibles técnicas para interconectar redes (orientadas al tráfico de paquetes) de distintas clases. Para este fin, desarrollaron nuevos protocolos de comunicaciones que permitiesen este intercambio de información de forma "transparente" para las computadoras conectadas. De la filosofía del proyecto surgió el nombre de "Internet", que se aplicó al sistema de redes interconectadas mediante los protocolos TCP e IP.24​
+1983: El 1 de enero, ARPANET cambia el protocolo NCP por el TCP/IP. Ese mismo año, se crea el ISP con el fin de estandarizar el protocolo TCP/IP y de proporcionar recursos de investigación a Internet. Por otra parte, se centró la función de asignación de identificadores en la IANA que, más tarde, delegó parte de sus funciones en el Internet registry que, a su vez, proporciona servicios a los DNS.25​26​
+1986: La NSF comienza el desarrollo de NSFNET, que se convirtió en la principal Red en árbol de Internet, complementada después con las redes NSINET y ESNET, todas ellas en Estados Unidos. Paralelamente, otras redes troncales en Europa, tanto públicas como comerciales, junto con las americanas formaban el esqueleto básico ("backbone") de Internet.27​28​
+1989: Con la integración de los protocolos OSI en la arquitectura de Internet, se inicia la tendencia actual de permitir no solo la interconexión de redes de estructuras dispares, sino también la de facilitar el uso de distintos protocolos de comunicaciones.29​ Entre finales de 1989 y principios de 1990, en el CERN de Ginebra, un grupo de físicos encabezado por Tim Berners-Lee crea el lenguaje HTML basado en el SGML, y además el servicio hoy más popular de Internet: la World Wide Web (WWW).
+1990: el mismo equipo del CERN construye el primer cliente web, llamado primero WorldWideWeb y luego Nexus, y el primer servidor web.30​
+A inicios de la década de 1990, con la introducción de nuevas facilidades de interconexión y herramientas gráficas simples para el uso de la red, se inicia el auge de Internet que actualmente se conoce. Este crecimiento masivo trajo consigo el surgimiento de un nuevo perfil de usuarios, en su mayoría de personas comunes no ligadas a los sectores académicos, científicos y gubernamentales.25​
+
+Esto cuestionaba la subvención del gobierno estadounidense al sostenimiento y la administración de la red, así como la prohibición existente al uso comercial del Internet. Los hechos se sucedieron rápidamente y para 1993 ya se había levantado la prohibición al uso comercial del Internet y definido la transición hacia un modelo de administración no gubernamental que permitiese, a su vez, la integración de redes y proveedores de acceso privados.31​ El 30 de abril de 1993 la Web entró al dominio público, ya que el CERN entregó las tecnologías de forma gratuita para que cualquiera pudiera utilizarlas.32​33​
+
+1993: El 22 de abril de 1993 aparece Mosaic, el primer navegador web que permitía ver texto y gráficos en línea -hasta entonces solo se podían ver los gráficos accediendo a los enlaces en el texto. Fue creado por el National Center for Supercomputing Applications (NCSA) y marcó el camino para los navegadores posteriores. Según la NCSA el tráfico de Internet se multiplicó por 10 en solo un año gracias a Mosaic.34​
+1995: Otra fecha importante fue la del 30 de abril de 1995. Este día se apaga el backbone original del NSFNET, convirtiendo oficialmente la red en árbol original en un grafo de interconexiones. En cualquier caso, la carga del backbone en esa fecha llevaba ya solo el intercambio de una pequeña parte del tráfico de Internet.24​
+2006: El 3 de enero, Internet alcanza los mil cien millones de usuarios. Además, se preveía que en diez años la cantidad de navegantes de la Red aumentara a 2000 millones.35​
+El primer dato que llama la atención es el incremento en el número de usuarios que utilizan Internet. En esos diez años se ha pasado de 559 millones a 2270 millones de personas que navegan en todo mundo, lo que equivale al 33 % del total de la población mundial, una cifra muy superior al 9,1 % de 2002.
+
+El resultado de todo esto es lo que se experimenta hoy en día: la transformación de una enorme red de comunicaciones para uso gubernamental, planificada y construida con fondos estatales, que ha evolucionado en una miríada de redes privadas interconectadas entre sí, a la que cualquier persona puede acceder. Actualmente la red experimenta cada día la integración de nuevas redes y usuarios, extendiendo su amplitud y dominio, al tiempo que surgen nuevos mercados, tecnologías, instituciones y empresas que aprovechan este nuevo medio, cuyo potencial apenas se comienza a descubrir.36​
+
+Como se dijo, una red de computadoras es un conjunto de máquinas que se comunican a través de algún medio (cable coaxial, fibra óptica, radiofrecuencia, líneas telefónicas, etcétera) con el objeto de compartir recursos.
+
+De esta manera, Internet sirve de enlace entre redes más pequeñas y permite ampliar su cobertura al hacerlas parte de una "red global". Esta red global tiene la característica de que utiliza un lenguaje común que garantiza la intercomunicación de los diferentes participantes; este lenguaje común o protocolo (un protocolo es el lenguaje que utilizan las computadoras al compartir recursos) se conoce como TCP/IP.
+
+Así pues, Internet es la "red de redes" que utiliza TCP/IP como su protocolo de comunicación.
+
+Internet es un acrónimo de INTERconnected NETworks ("Redes interconectadas").37​38​Para otros, Internet es un acrónimo del inglés INTERnational NET, que traducido al español sería "Red Mundial".39​
+
+OCIO
+---------
+Muchos utilizan Internet para descargar música, películas y otros trabajos. Hay fuentes que cobran por su uso y otras gratuitas, usando los servidores centralizados y distribuidos, las tecnologías de P2P. Otros utilizan la red para tener acceso a las noticias y el estado del tiempo.
+
+La mensajería instantánea o chat y el correo electrónico son algunos de los servicios de uso más extendido. En muchas ocasiones los proveedores de dichos servicios brindan a sus afiliados servicios adicionales como la creación de espacios y perfiles públicos en donde los internautas tienen la posibilidad de colocar en la red fotografías y comentarios personales. Se especula actualmente si tales sistemas de comunicación fomentan o restringen el contacto de persona a persona entre los seres humanos.72​
+
+En tiempos más recientes han cobrado auge portales sociales como YouTube, Twitter o Facebook, entre otros, en donde los usuarios pueden tener acceso a una gran variedad de vídeos sobre prácticamente cualquier tema.
+
+La pornografía representa buena parte del tráfico en Internet, siendo a menudo un aspecto controvertido de la red por las implicaciones morales que le acompañan. Proporciona a menudo una fuente significativa del rédito de publicidad para otros sitios. Muchos gobiernos han procurado sin éxito poner restricciones en el uso de ambas industrias en Internet.
+
+El sistema multijugador constituye también buena parte del ocio en Internet.
+
+Efectos en el cerebro
+En 2008 el tecnólogo estadounidense Nicholas Carr publicó un artículo en el que afirmaba que Internet estaba erosionando la capacidad humana de concentración y de pensamiento crítico, e incluso aseguraba que la Red cambiaría la estructura del cerebro y la forma de pensar de las personas. Expertos de diversos ámbitos comenzaron a realizar estudios y a reflexionar sobre la relación entre la Red y las capacidades cognitivas. Algunos coincidían con Carr, pero otros como Clive Thompson descartaban esos argumentos asegurando que siempre que surgía una nueva tecnología se producía el mismo debate. Estos «tecnooptimistas» afirman que la Red no solo potencia la agilidad cerebral, sino que además permite aprender más y más rápido, en definitiva, haciendo a las personas más inteligentes.73​
+
+Efectos en las sociedades
+Hay un intenso debate sobre el efecto de Internet en las sociedades. Por un lado están los que piensan que Internet, al favorecer el intercambio de información, favorece el desarrollo de la participación ciudadana y la democratización. Este sería un motivo de la Agenda de Libertad de Internet (en inglés The Internet Freedom Agenda) del Departamento de Estado de los Estados Unidos.74​ Esta creencia es respaldada por los llamados ciberutópicos, los cuales opinan que Internet es en sí misma emancipatoria.75​ Por otro lado otros, como por ejemplo Evgeny Morozov, piensan que Internet facilita la vigilancia masiva, la represión política y la expansión de propaganda nacionalista y extremista.76​
+
+Fuente de información
+En 2009, un estudio realizado en Estados Unidos indicó que un 56 % de los 3030 adultos estadounidenses entrevistados en una encuesta en línea manifestó que si tuviera que escoger una sola fuente de información, elegiría Internet, mientras que un 21 % preferiría la televisión y tanto los periódicos como la radio serían la opción de un 10 % de los encuestados. Dicho estudio posiciona a los medios digitales en una posición privilegiada en cuanto a la búsqueda de información y refleja un aumento de la credibilidad en dichos medios.77​78​
+
+Trabajo
+Con la aparición de las conexiones de alta velocidad disponibles al público, Internet ha alterado de manera significativa la manera de trabajar de algunas personas al poder hacerlo desde sus respectivos hogares. Internet ha permitido a estas personas mayor flexibilidad en términos de horarios y de localización, contrariamente a la jornada laboral tradicional, que suele ocupar la mañana y parte de la tarde, y en la cual los empleados se desplazan al lugar de trabajo.
+
+Un experto contable asentado en un país puede revisar los libros de una compañía en otro país, en un servidor situado en un tercer país que sea mantenido remotamente por los especialistas en un cuarto.
+
+Internet y sobre todo los blogs han dado a los trabajadores un foro en el cual expresar sus opiniones sobre sus empleos, jefes y compañeros, creando una cantidad masiva de información y de datos sobre el trabajo que está siendo recogido actualmente por el colegio de abogados de Harvard.
+
+Internet ha impulsado el fenómeno de la Globalización y junto con la llamada desmaterialización de la economía ha dado lugar al nacimiento de una Nueva Economía caracterizada por la utilización de la red en todos los procesos de incremento de valor de la empresa.
+
+Publicidad
+Artículo principal: Publicidad en Internet
+Internet se ha convertido en el medio más fácilmente medible y de más alto crecimiento en la historia, además de que es un medio por el cual muchas personas conectan de manera casi instantánea. Actualmente existen muchas empresas que obtienen dinero de la publicidad en Internet. Además, hay muchas ventajas que la publicidad interactiva ofrece tanto para el usuario como para los anunciantes.
+
+Censura
+Es extremadamente difícil, si no imposible, establecer un control centralizado y global de Internet. Algunos gobiernos, de naciones tales como Irán, Arabia Saudita, Corea del Norte y la República Popular China, restringen el que personas de sus países puedan ver ciertos contenidos de Internet, políticos y religiosos, considerados contrarios a sus criterios. La censura se hace, a veces, mediante filtros controlados por el gobierno, apoyados en leyes o motivos culturales, castigando la propagación de estos contenidos. Sin embargo, muchos usuarios de Internet pueden burlar estos filtros, pues la mayoría del contenido de Internet está disponible en todo el mundo, sin importar donde se esté, siempre y cuando se tengan la habilidad y los medios técnicos necesarios.79​
+
+Otra posibilidad, como en el caso de China, es que este tipo de medidas se combine con la autocensura de las propias empresas proveedoras de servicios de Internet, las empresas equivalentes a Telefónicas (proveedores de servicios de Internet), para así ajustarse a las demandas del gobierno del país receptor.80​
+
+Sin embargo, algunos buscadores como Google han tomado la decisión de amenazar al gobierno de China con la retirada de sus servicios en dicho país si no se abole la censura en Internet. Aunque posteriormente haya negado que tomará dichas medidas.81​
+
+Para saltarse cualquier tipo de censura o coerción en el uso de Internet, se han desarrollado múltiples tecnologías y herramientas. Entre ellas cabe resaltar por un lado las técnicas y herramientas criptológicas y por otro lado las tecnologías encuadradas en la llamada Darknet. La Darknet es una colección de redes y tecnologías que persiguen la consecución de un anonimato total de los comunicantes, creando de esta forma una zona de total libertad. Aunque actualmente no se suele considerar que consigan un anonimato total, sin embargo, sí consiguen una mejora sustancial en la privacidad de los usuarios. Este tipo de redes se han usado intensamente, por ejemplo, en los sucesos de la Primavera Árabe y en todo el entramado de WikiLeaks para la publicación de información confidencial. Las tecnologías de la Darknet están en fase de perfeccionamiento y mejora de sus prestaciones.82​
+
+Para luchar contra la censura en Internet, RSF decidió desbloquear nueve sitios web informativos censurados en once países, es decir, permitió que se pueda acceder a ellos desde el territorio en el que se encontraban prohibidos: Grani.ru, bloqueado en Rusia; Fregananews, censurado en Kazajistán, Uzbekistán y Turkmenistán; The Tíbet Post y Mingjing News, prohibidos en China; Dan Lam Bao, bloqueado en Vietnam; Hablemos Press, censurado en Cuba; Gooya News, bloqueado en Irán; el Gulf Center for Human Rights, censurado en los Emiratos Árabes Unidos y en Arabia Saudita, y Bahrain Mirror, prohibido en Baréin y en Arabia Saudita.
+
+Internet en obras de ficción
+Artículo principal: Internet en la ciencia ficción
+Internet aparece muchas veces en obras de ficción. Puede ser un elemento más de la trama, algo que se usa de forma habitual tal y como se hace en la vida real.
+
+También hay obras donde Internet se presenta como un medio maligno que permite a hackers sembrar el caos y alterar registros, como por ejemplo en las películas La red (1995) y Live Free or Die Hard (2007), entre otras. Hay otras obras donde aparece como una gran oportunidad para la libertad de expresión, por ejemplo, en la película FAQ: Frequently Asked Questions (2004).
+
+Efecto desinhibidor de Internet
+Véase también: Interacción persona-computadora
+La soltura con la que las personas se expresan en las redes sociales fue descrita por el psicólogo John Suler, especializado en ciberdelincuencia, en su obra The Online Dishinibition Effect'.83​ Este autor explica que la forma de comportamiento no es la misma en las redes sociales que cuando se está frente a frente, lo que se debe al efecto desinhibidor del ciberespacio. La ausencia de contacto físico, así como la no percepción de gestos y sensaciones, hace que la forma de relacionarse sea muy diferente. John Suler explica este fenómeno mediante 6 factores:84​
+
+Disociación por anonimato. Los perfiles virtuales hacen que se pueda ocultar la verdadera identidad de las personas.
+Invisibilidad del ciberespacio. No existe contacto físico en el ciberespacio.
+Asincronía de la comunicación virtual.
+Solipsismo. El cerebro crea una imagen de la persona por las características que esta transmite, que muchas veces no se corresponde con las reales.
+Disociación imaginativa. La justificación de los comportamientos a través de las redes resulta más fácil porque no se tiene tanta conciencia sobre ellos.
+Minimización del estado de autoridad. El miedo a ser rechazados porque las opiniones no sean compartidas por otros disminuye.
+Los cambios comportamentales en las redes están directamente relacionados con el aumento del número de delitos que se cometen a través de Internet. La sensación de seguridad y privacidad que aporta este espacio hace que estos delitos sean de los que más se cometen en España. Según las estadísticas publicadas por el Ministerio del Interior, en el año 2011 se contabilizaron 21.075 delitos a través de las redes, pasando a 88.859 en el año 2019, lo que supone un aumento muy significativo.85​
+
+Twitter es una de las redes sociales en las que existe una mayor libertad de expresión. Esa libertad provoca que muchos de los internautas publiquen contenido calificado de inadecuado que, en ocasiones, se incluiría dentro de los delitos de odio. El mal uso de las redes puede desembocar en la creación de una identidad paralela o en delitos relacionados con el sexting, la suplantación de identidad o phishing, injurias y calumnias o ciberacoso. Existe una disminución de la responsabilidad cuando se cometen este tipo de actos, y lo cierto es que la mayoría de los delitos que se cometen a través de las redes no se condenan, ya que Internet es un espacio en el que es muy difícil perseguir al delincuente.
