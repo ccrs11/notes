@@ -19,11 +19,11 @@ async function traercomentarios(id) {
     const insertComment = document.querySelector('.comentarios');
     let comment = "";
     let avatar = "";
-    for (let i = 0; i < 6; i++) {
+    insertComment.innerHTML=``;
+    for (let i = 0; i < 20; i++) {
       comment = result.comments[i].content;
       avatar = result.comments[i].author.avatar[0].url;
-      /* insertComment.innerHTML=`<img src="${avatar}" alt="avatar"> <p>${comment}</p>` */
-      insertComment.insertAdjacentHTML("beforeend", `<div><img src="${avatar}" alt="avatar"> <p>${comment}</p><div>`);
+      insertComment.insertAdjacentHTML("beforeend", `<div><img src="${avatar}" alt="avatar"> <p>${comment}</p></div>`);
     }
   } catch (error) {
     console.error(error);
@@ -47,7 +47,7 @@ async function traerDescription(id) {
     const description=result.description;
     //console.log(description);
     const insertDescription = document.querySelector(".descripcion");
-    insertDescription.innerHTML=`<p>${description}</p>`;
+    insertDescription.innerHTML=`<p class="descripcion" >${description}</p>`;
   } catch (error) {
     console.error(error);
   }
@@ -70,6 +70,7 @@ async function traerRelatedVideos(id){
 
     const insertRelated = document.querySelector('.relatedV');
     let idvideo = "";
+    insertRelated.innerHTML="";
     for (let i = 0; i < 10; i++) {
       idvideo = result.contents[i].video.videoId;
       insertRelated.insertAdjacentHTML("beforeend", `<iframe width="150rem" height="150rem" src="https://www.youtube.com/embed/${idvideo}" frameborder="0" allowfullscreen></iframe>`);
