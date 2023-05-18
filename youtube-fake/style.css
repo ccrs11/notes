@@ -3,7 +3,7 @@
     grid-template-columns: 24vw 24vw 24vw 24vw;
     grid-template-rows: 5vw;
     gap: 10px;
-    background-color: #2196F3;
+    /* background-color: #2196F3; */
     padding: 5px;
     box-sizing: border-box;
 }
@@ -53,13 +53,16 @@
     grid-row:3/7;
     grid-column:4/5;
     padding: 10px;
+    flex-direction: column;
+    overflow: auto;
+    height: 500px;
     
 }
 .comentarios>div{
   display: flex;
   flex-direction: row;
   padding: 2px;
-  border: 1px solid red;
+  border: 1px solid black;
   border-radius: 10px;
 }
 .comentarios>div>p{
@@ -77,10 +80,14 @@
 }
 .relatedV>iframe{
   display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
 }
 .descripcion{
     grid-row:7/8;
     grid-column:4/5;
+    height: 150px;
+    overflow: scroll;
 }
 
 #logo{
@@ -101,7 +108,7 @@ input#search-bar{
   font-size: 1rem;
   border: 1px solid #D0CFCE;
   outline: none;
-  &:focus{
+   &:focus{
     border: 1px solid #008ABF;
     transition: 0.35s ease;
     color: #008ABF;
